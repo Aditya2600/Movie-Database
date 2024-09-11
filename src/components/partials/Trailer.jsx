@@ -11,11 +11,11 @@ const Trailer = () => {
   return (
     <div className="absolute z-[100] top-0 left-0 bg-[rgba(0,0,0,.9)] w-screen h-screen flex items-center justify-center">
       <ReactPlayer
-      height={1080}
-      width={1920} 
+      height={800}
+      width={1500} 
       url={`https://www.youtube.com/watch?v=${ytvideo.key}`} 
       />
-    </div>
+    </div> 
   );
 };
 

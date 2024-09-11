@@ -36,13 +36,13 @@ const Moviedetails = () => {
           className="hover:text-[#6556CD] ri-arrow-left-line"
         ></i>
         <a target="_blank" href={info.detail.homepage}>
-          <i class="hover:text-[#6556CD] ri-external-link-fill"></i>
+          <i className="hover:text-[#6556CD] ri-external-link-fill"></i>
         </a>
         <a
           target="_blank"
           href={`https://www.wikidata.org/wiki/${info.externalid.wikidata_id}`}
         >
-          <i class="hover:text-[#6556CD] ri-earth-fill"></i>
+          <i className="hover:text-[#6556CD] ri-earth-fill"></i>
         </a>
         <a
           className="text-yellow-300"
@@ -51,7 +51,7 @@ const Moviedetails = () => {
         >
           imdb
         </a>
-      </nav>
+      </nav> 
 
       {/* Part 2 Poster & details */}
       <div className="w-full flex">
