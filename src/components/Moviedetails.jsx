@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import { asyncloadmovie, removemovie } from "../store/actions/movieActions";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
+import {
+  Link,
+  Outlet,
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
 import Loading from "./Loading";
 import HorizontalCards from "./partials/HorizontalCards";
 
@@ -31,10 +37,10 @@ const Moviedetails = () => {
     >
       {/* Part 1 Navigation */}
       <nav className="h-[10vh] w-full text-zinc-100 flex items-center gap-10 text-xl">
-        <i
+        <Link
           onClick={() => navigate(-1)}
           className="hover:text-[#6556CD] ri-arrow-left-line"
-        ></i>
+        ></Link>
         <a target="_blank" href={info.detail.homepage}>
           <i className="hover:text-[#6556CD] ri-external-link-fill"></i>
         </a>
@@ -51,7 +57,7 @@ const Moviedetails = () => {
         >
           imdb
         </a>
-      </nav> 
+      </nav>
 
       {/* Part 2 Poster & details */}
       <div className="w-full flex">
@@ -150,8 +156,10 @@ const Moviedetails = () => {
       </div>
 
       {/* Part 4 Recommendation and Similar Stuff */}
-      <hr className="mt-10 mb-5 border-none h-[2px] bg-zinc-500"/>
-      <h1 className="text-3xl font-bold text-white">Recommendations & Similar</h1>
+      <hr className="mt-10 mb-5 border-none h-[2px] bg-zinc-500" />
+      <h1 className="text-3xl font-bold text-white">
+        Recommendations & Similar
+      </h1>
       <HorizontalCards
         data={
           info.recommendations.length > 0 ? info.recommendations : info.similar

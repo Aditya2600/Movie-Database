@@ -25,7 +25,9 @@ const App = () => {
           <Route path="/movie/details/:id/trailer" element={<Trailer />} />
         </Route>
         <Route path="/tv" element={<TVshows />} />
-        <Route path="/tv/details/:id" element={<Tvdetails />} />
+        <Route path="/tv/details/:id" element={<Tvdetails />}>
+          <Route path="/tv/details/:id/trailer" element={<Trailer />} />
+        </Route>
         <Route path="/person" element={<People />} />
         <Route path="/person/details/:id" element={<PersonDetails />} />
         <Route path="/about" element={<About />} />
