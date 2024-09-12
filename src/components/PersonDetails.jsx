@@ -12,6 +12,7 @@ import HorizontalCards from "./partials/HorizontalCards";
 import Dropdown from "./partials/Dropdown";
 
 const PersonDetails = () => {
+  document.title = "AMDB | Person Details";
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const { id } = useParams();
