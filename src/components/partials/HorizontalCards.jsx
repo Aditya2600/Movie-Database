@@ -4,7 +4,7 @@ import noimage from "/noimage.jpeg";
 
 const HorizontalCards = ({ data, title }) => {
     return (
-        <div className="w-[100%] flex overflow-y-hidden mb-5 p-5 ">
+        <div className="w-[100%] flex overflow-y-hidden mb-5 p-5">
             {data.length > 0 ? (
                 data.map((d, i) => (
                     <Link
