@@ -8,11 +8,11 @@ import People from "./components/People";
 import About from "./components/About";
 import ContactUs from "./components/ContactUs";
 import Moviedetails from "./components/Moviedetails";
-import Tvdetails from "./components/Tvdetails";
 import PersonDetails from "./components/PersonDetails";
 import Trailer from "./components/partials/Trailer";
 import NotFound from "./components/NotFound";
 import TVshows from "./components/Tvshows";
+import TvDetails from "./components/TvDetails";
 
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/movie/details/:id/trailer" element={<Trailer />} />
         </Route>
         <Route path="/tv" element={<TVshows />} />
-        <Route path="/tv/details/:id" element={<Tvdetails />}>
+        <Route path="/tv/details/:id" element={<TvDetails />}>
           <Route path="/tv/details/:id/trailer" element={<Trailer />} />
         </Route>
         <Route path="/about" element={<About />} />
