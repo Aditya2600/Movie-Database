@@ -4,7 +4,6 @@ import Home from "./components/Home";
 import Trending from "./components/Trending";
 import Popular from "./components/Popular";
 import Movie from "./components/Movie";
-import TVshows from "./components/TVshows";
 import People from "./components/People";
 import About from "./components/About";
 import ContactUs from "./components/ContactUs";
@@ -13,6 +12,7 @@ import Tvdetails from "./components/Tvdetails";
 import PersonDetails from "./components/PersonDetails";
 import Trailer from "./components/partials/Trailer";
 import NotFound from "./components/NotFound";
+import TVshows from "./components/Tvshows";
 
 const App = () => {
   return (
