@@ -27,7 +27,7 @@ const PersonDetails = () => {
   }, [id]);
 
   return info ? (
-    <div className="px-[10%] w-screen h-[164vh] bg-[#1F1E24]">
+    <div className="px-[10%] w-screen h-fit mb-10 bg-[#1F1E24]">
       {/* Part 1 navigation */}
       <nav className="h-[10vh] w-full text-zinc-100 flex items-center gap-10 text-xl">
         <Link
@@ -124,7 +124,7 @@ const PersonDetails = () => {
               func={(e) => setcategory(e.target.value)}
             />
           </div>
-          <div className="list-disc text-zinc-400 h-[50vh] mt-5 w-full overflow-x-hidden overflow-y-auto shadow-xl shadow-[rgba(255,255,255,.3)] border-2 border-zinc-700 p-5">
+          <div className="list-disc text-zinc-400 h-[50vh] mt-5 mb-20 w-full overflow-x-hidden overflow-y-auto shadow-xl shadow-[rgba(255,255,255,.3)] border-2 border-zinc-700 p-5">
             {info[category + "Credits"].cast.map((c, i) => (
               <li
                 key={i}
